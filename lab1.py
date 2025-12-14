@@ -21,7 +21,3 @@ sorted_sports = sorted(sport_count.items(), key=lambda x: x[1], reverse=True)
 print("Топ-3 самых популярных видов спорта по количеству объектов:")
 for i, (sport, count) in enumerate(sorted_sports[:3], 1):
     print(f"{i}. {sport}: {count} объектов")
-
-print("\nПолная статистика по всем видам спорта:")
-for sport, count in sorted_sports:
-    print(f"{sport}: {count} объектов")
